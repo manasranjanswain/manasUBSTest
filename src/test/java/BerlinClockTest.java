@@ -100,7 +100,9 @@ public class BerlinClockTest {
     public void testInvalidString() {
     	try {
     		berlinClock.convertTime("00:00");
-        } catch (BusinessException e) {}
+        } catch (BusinessException e) {
+	  assertEquals("Please pass the Time, Hours, and Seconds inputs properly ", e.getMessage());
+	}
     }
 
     @Test(expected = NullPointerException.class)
@@ -114,7 +116,9 @@ public class BerlinClockTest {
     public void testEmptyString() {
     	try {
     		berlinClock.convertTime("");
-        } catch (BusinessException e) {}
+        } catch (BusinessException e) {
+	  assertEquals("Please check the input time whether it has character in it", e.getMessage());
+	}
     }
 
     @After
