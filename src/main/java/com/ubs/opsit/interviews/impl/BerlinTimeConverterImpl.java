@@ -23,6 +23,13 @@ public class BerlinTimeConverterImpl implements BerlinTimeConverter{
 				int hour = Integer.valueOf(spiltTime[0]);
 				int minutes = Integer.valueOf(spiltTime[1]);
 				int seconds = Integer.valueOf(spiltTime[2]);
+			
+				if (hour < 0 || hour > BerlinClockTime.HOUR_FORMAT.getTime()) 
+					throw new IllegalArgumentException("Hours out of bounds.");
+		        	if (minutes < 0 || minutes > BerlinClockTime.MIN_SECONDS_FORMAT.getTime()) 
+		        		throw new IllegalArgumentException("Minutes out of bounds.");
+		        	if (seconds < 0 || seconds > BerlinClockTime.MIN_SECONDS_FORMAT.getTime()) 
+		        		throw new IllegalArgumentException("Seconds out of bounds.");
 				
 				boolean isValided  = ValidateTime.validateTime(hour, minutes, seconds);
 			
