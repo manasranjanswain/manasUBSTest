@@ -75,21 +75,21 @@ public class BerlinClockTest {
         } catch (BusinessException e) {}
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testLowerInvalidHours() {
     	try {
     		berlinClock.convertTime("-01:00:00");
         } catch (BusinessException e) {}
     }
 
-    @Test
+     @Test(expected = IllegalArgumentException.class)
     public void testLowerInvalidMinutes() {
     	try {
     		berlinClock.convertTime("00:-01:00");
         } catch (BusinessException e) {}
     }
 
-    @Test
+     @Test(expected = IllegalArgumentException.class)
     public void testLowerInvalidSeconds() {
     	try {
     		berlinClock.convertTime("00:00:-01");
