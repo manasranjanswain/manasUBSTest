@@ -17,20 +17,12 @@ import com.ubs.opsit.interviews.impl.BerlinTimeConverterImpl;
 
 public class BerlinClockTest {
 	
-	private BerlinTimeConverter berlinClock = new BerlinTimeConverterImpl() ;
-	
-	
-    private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
-    private final ByteArrayOutputStream errContent = new ByteArrayOutputStream();
-
+   private BerlinTimeConverter berlinClock;
     @Before
-    public void setUpStreams() {
-        System.setOut(new PrintStream(outContent));
-        System.setErr(new PrintStream(errContent));
+    public void setUp() {
+        berlinClock = new BerlinTimeConverterImpl() ;
     }
-    
-    
-
+ 
     @Test
     public void testMinValidBerlinClock() {
     	try {
@@ -126,9 +118,8 @@ public class BerlinClockTest {
     }
 
     @After
-    public void cleanUpStreams() {
-        System.setOut(null);
-        System.setErr(null);
+    public void cleanUp() {
+         berlinClock = null;
     }
 
 }
