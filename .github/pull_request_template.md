@@ -50,7 +50,7 @@ Please delete options that are not relevant.
 |  20  | Similar values grouped under an enumeration (Enum).                                                                        |                     |                    |
 |  21  | No unnecessary, multiple if/else blocks.                                                                                   |                     |                    |
 |  22  | Framework features, used, wherever possible instead of writing custom code.                                                |                     |                    |
-|  23  | http codes are proper?                                                                                                     |                     |                    |
+|  23  | Http codes are proper?                                                                                                     |                     |                    |
 |  24  | No hard coded username/password or any security credentials in code?                                                       |                     |                    |
 |  25  | Seed stack provided annotations used?                                                                                      |                     |                    |
 
