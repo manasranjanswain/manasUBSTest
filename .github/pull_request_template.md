@@ -28,7 +28,7 @@ Please delete options that are not relevant.
 ## Checklist:
 | S.No | Description                                                                                                                | Developer's check(✔️/✖️) | Reviewer's check(✔️/✖️) |
 |:----:|----------------------------------------------------------------------------------------------------------------------------|---------------------|--------------------|
-|   1  | No unnecessary imports?                                                                                                    |     &#9744;         |     &#9744;    |
+|   1  | No unnecessary imports?                                                                                                    |     <input type="checkbox" />         |     &#9744;    |
 |   2  | Proper Code comments inserted? Comments at class and  method level used? Proper Indentation of code?                       |                     |                    |
 |   3  | Loggers used?                                                                                                              |                     |                    |
 |   4  | Any unused objects removed? Exception handling with code clean-up addressed?                                               |                     |                    |
