@@ -1,7 +1,7 @@
 # Pull Request Template
   
 | Sprint No       |               |            
-|:----------------|--------------:|
+|:----------------|:--------------|
 | JIRA ID         |               |       
 | Developer Name  |               |
 | Date of Review  |   05/01/2023  |
