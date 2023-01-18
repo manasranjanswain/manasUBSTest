@@ -8,4 +8,4 @@
 <b>6.</b> If service is already on production database/schema migration process should be followed on dev and uat first before moving  to production.Don't delete existing structure because this can not be done on prod.</br>
 <b>7.</b> Use lombok instead of writing code manually wherever possible.</br>
 <b>8.</b> All the Request,Response and any other object which could be shared among the services where the service is called should be moved to ms-common instead of writing in each service.</br>
-<b>9.</b> Don't duplicate code in the project.</br>
+<b>9.</b> Don't duplicate code in the project. </br>
