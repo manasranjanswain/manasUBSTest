@@ -53,6 +53,7 @@ Please delete options that are not relevant.
 |  23  | Http codes are proper?                                                                                                     |                     |                    |
 |  24  | No hard coded username/password or any security credentials in code?                                                       |                     |                    |
 |  25  | Seed stack provided annotations used?                                                                                      |                     |                    |
+|  26  | Testing of Vehicle Registration, Campaign Registration and Software Registration to be done before rasing PR               |                     |                    |
 
 ##### PS:
 + The above checklist has been produced based on the guidelines at https://development.psa-cloud.com.
